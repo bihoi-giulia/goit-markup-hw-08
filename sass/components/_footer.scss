@@ -1,0 +1,121 @@
+.footer {
+  background-color: var(--backgrounde-color);
+  height: 251px;
+  &__container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0px auto;
+  }
+  &__contact {
+    margin: 0;
+    padding-top: 60px;
+    display: inline-block;
+  }
+  &__logo {
+    color: var(--highlight-color);
+    font-size: 26px;
+    line-height: 1.19;
+    font-family: "Raleway", sans-serif;
+    margin-top: 24px;
+    margin-bottom: 25px;
+  }
+  &__logo-text {
+    color: var(--white-color);
+  }
+  &__address {
+    color: var(--white-color);
+    font-style: normal;
+    margin-top: 10px;
+  }
+  &__link {
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &__paragraph {
+    color: var(--white-color);
+    font-style: normal;
+    margin-top: 28px;
+  }
+}
+.social-footer {
+  margin-top: 75px;
+  margin-left: 94px;
+  &__text {
+    margin: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px;
+    margin-top: 20px;
+  }
+  &__link {
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__link:hover {
+    background: var(--highlight-color);
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--white-color);
+  }
+  &__subscribe-text {
+    margin: 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+  }
+  &__input {
+    width: 358px;
+    height: 50px;
+    padding: 10px;
+    outline: none;
+    margin-top: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(47, 48, 58, 1);
+  }
+  &__btn {
+    background-color: var(--highlight-color);
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: var(--white-color);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    margin-right: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  &__icon-send {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 227px;
+  }
+}

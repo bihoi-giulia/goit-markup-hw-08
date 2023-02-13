@@ -1,0 +1,24 @@
+.container {
+  margin: 94px auto;
+  max-width: 1200px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__grid {
+    position: relative;
+  }
+  &__img {
+    display: block;
+  }
+  &__overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(47, 48, 58, 0.8);
+    width: 100%;
+    padding: 27px;
+    color: var(--white-color);
+    font-weight: 700;
+    text-align: center;
+  }
+}

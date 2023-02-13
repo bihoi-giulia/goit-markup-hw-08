@@ -1,0 +1,67 @@
+.grid {
+  border-radius: 0px 0px 4px 4px;
+  background-color: var(--gray-bc);
+  box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  height: 708px;
+  &__subtitle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 94px;
+  }
+  &__container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+    padding: 0;
+    justify-content: space-between;
+    text-align: center;
+  }
+  &__card {
+    background-color: var(--white-color);
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 1.18;
+    color: var(--description-color);
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: rgba(117, 117, 117, 1);
+  }
+}
+.grid-social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 0px;
+  &__link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    fill: var(--gray-color);
+    border-radius: 50%;
+  }
+  &__link:hover {
+    fill: white;
+    background: var(--highlight-color);
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    color: var(--highlight-color);
+  }
+}

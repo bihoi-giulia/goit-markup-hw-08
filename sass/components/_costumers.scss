@@ -1,0 +1,20 @@
+.customers {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  padding: 0px;
+  margin: 0px auto 94px;
+  &__svg {
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--gray-color);
+    border-radius: 4px;
+    fill: var(--gray-color);
+  }
+  &__svg:hover {
+    cursor: pointer;
+    fill: var(--highlight-color);
+    border: 1px solid var(--highlight-color);
+    border-radius: 4px;
+  }
+}
