@@ -75,7 +75,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .menu {
     display: none;
   }
@@ -84,14 +84,14 @@
   }
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .contact-menu {
     flex-direction: column;
     gap: 10px;
   }
-}
+}*/
 
-@media (min-width: 1200px) {
+/*@media (min-width: 1200px) {
   .header {
     justify-content: center;
     border-bottom: 1px solid #ececec;
@@ -136,4 +136,4 @@
       color: var(--highlight-color);
     }
   }
-}
+}*/

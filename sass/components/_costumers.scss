@@ -1,9 +1,11 @@
 .customers {
-  display: flex;
+  /* display: flex;*/
   justify-content: space-between;
   max-width: 1200px;
   padding: 0px;
   margin: 0px auto 94px;
+  column-count: 2;
+  gap: 99px;
   &__svg {
     width: 170px;
     height: 92px;
@@ -18,5 +20,10 @@
     border-radius: 4px;
   }
 }
-@media (max-width: 480px) {
-}
+
+/*@media (max-width: 768px) {
+  .customers {
+    column-count: 2;
+    gap: 99px;
+  }
+}*/

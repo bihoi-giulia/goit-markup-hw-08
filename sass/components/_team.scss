@@ -65,7 +65,7 @@
     color: var(--highlight-color);
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .grid {
     &__container {
       width: 480px;
