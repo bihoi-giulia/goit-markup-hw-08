@@ -65,3 +65,16 @@
     color: var(--highlight-color);
   }
 }
+@media (max-width: 480px) {
+  .grid {
+    flex-direction: column;
+    width: 480px;
+  }
+  &__container {
+    flex-direction: column;
+    width: 480px;
+  }
+  &__card {
+    flex-direction: column;
+  }
+}

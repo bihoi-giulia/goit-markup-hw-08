@@ -32,3 +32,13 @@
     align-items: center;
   }
 }
+@media (max-width: 480px) {
+  .hero {
+    background-image: url(../images/imgbg.jpg);
+    max-width: 480px;
+  }
+}
+@media (max-width: 768px) {
+}
+@media (min-width: 1200px) {
+}
