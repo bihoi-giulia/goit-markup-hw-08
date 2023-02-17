@@ -32,3 +32,23 @@
     align-items: center;
   }
 }
+@media (max-width: 480px) {
+  .hero {
+    max-width: 480px;
+    height: 400px;
+    &__title {
+      margin-top: 84px;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 42px;
+      /* or 162% */
+
+      text-align: center;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    &__button {
+      position: relative;
+    }
+  }
+}
