@@ -67,12 +67,14 @@
 }
 @media (max-width: 480px) {
   .grid {
+    width: 480px;
+    background-color: white;
     &__container {
       width: 480px;
       display: list-item;
     }
     &__subtitle {
-      padding-top: 145px;
+      padding-top: 237px;
     }
   }
 }
