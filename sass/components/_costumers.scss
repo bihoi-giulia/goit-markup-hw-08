@@ -23,7 +23,8 @@
 
 @media (max-width: 480px) {
   .customers {
+    width: 480px;
     column-count: 2;
-    gap: 99px;
+    gap: 30px;
   }
 }
