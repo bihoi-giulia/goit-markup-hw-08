@@ -20,11 +20,16 @@
     border-radius: 4px;
   }
 }
-
+.regular-costumers {
+  display: flex;
+  margin-bottom: 60px;
+  margin-right: 38px;
+}
 @media (max-width: 480px) {
   .customers {
     width: 480px;
     column-count: 2;
     gap: 30px;
+    flex-basis: 40%;
   }
 }

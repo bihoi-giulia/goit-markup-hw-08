@@ -36,6 +36,8 @@
   .hero {
     max-width: 480px;
     height: 400px;
+    background-image: url(../../images/hero__bg480W.png);
+    background-size: cover;
     &__title {
       margin-top: 84px;
       font-weight: 900;
