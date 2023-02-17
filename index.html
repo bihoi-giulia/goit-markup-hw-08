@@ -40,7 +40,25 @@
             <a class="menu__item" href="">Contacts</a>
           </div>
         </div>
-
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
         <div class="unstyled-list contact-menu">
           <div>
             <a class="contact-menu__item" href="mailto:info@devstudio.com">
@@ -573,9 +591,23 @@
       </button>
 
       <ul class="mobile-menu">
-        <li><a href="" class="link">Studio</a></li>
-        <li><a href="" class="link">Portfolio</a></li>
+        <li><a href="index.html" class="link">Studio</a></li>
+        <li><a href="portofolio.html" class="link">Portfolio</a></li>
         <li><a href="" class="link">Contacts</a></li>
+      </ul>
+      <ul class="mobile-menu-contact">
+        <div>
+          <a href="" class="link-contact-phone">+1212-772-4150</a>
+        </div>
+        <div>
+          <a href="" class="link-contact">info@devstudio.com</a>
+        </div>
+      </ul>
+      <ul class="mobile-menu-social">
+        <div><a href="" class="link-social">Instagram</a></div>
+        <div><a href="" class="link-social">Twitter</a></div>
+        <div><a href="" class="link-social">Facebook</a></div>
+        <div><a href="" class="link-social">LinkedIn</a></div>
       </ul>
     </div>
     <script defer src="js/mobile-menu.js"></script>
