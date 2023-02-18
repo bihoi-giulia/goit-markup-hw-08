@@ -1,11 +1,11 @@
 .customers {
-  /* display: flex;*/
+  display: flex;
   justify-content: space-between;
   max-width: 1200px;
   padding: 0px;
   margin: 0px auto 94px;
-  column-count: 2;
-  gap: 99px;
+
+  gap: 30px;
   &__svg {
     width: 170px;
     height: 92px;
