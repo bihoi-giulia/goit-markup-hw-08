@@ -67,11 +67,11 @@
 }
 @media (max-width: 480px) {
   .grid {
-    width: 480px;
+    max-width: 480px;
     background-color: white;
     margin-bottom: 30px;
     &__container {
-      width: 480px;
+      max-width: 480px;
       display: list-item;
     }
     &__subtitle {

@@ -39,7 +39,7 @@
 
 @media (max-width: 480px) {
   .feature {
-    width: 480px;
+    max-width: 480px;
     height: 604px;
     &__list {
       flex-direction: column;

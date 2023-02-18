@@ -27,7 +27,7 @@
 }
 @media (max-width: 480px) {
   .customers {
-    width: 480px;
+    max-width: 480px;
     column-count: 2;
     gap: 30px;
     flex-basis: 40%;
