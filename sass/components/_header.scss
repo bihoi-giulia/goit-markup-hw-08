@@ -84,7 +84,7 @@
   }
   .header {
     background-color: var(--white-color);
-    width: 480px;
+    max-width: 480px;
     height: 60px;
     justify-content: center;
     &__logo {

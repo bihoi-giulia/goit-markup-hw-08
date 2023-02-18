@@ -120,7 +120,8 @@
     text-align: center;
   }
   .footer {
-    width: 480px;
+    max-width: 480px;
+
     &__contact {
       margin-top: 60px;
     }
