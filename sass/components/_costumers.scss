@@ -40,3 +40,14 @@
     margin: auto;
   }
 }
+@media screen and (max-width: 768px) {
+  .customers {
+    max-width: 768px;
+    display: flex;
+  }
+  .customers {
+    display: inline-block;
+    column-count: 3;
+    gap: 30px;
+  }
+}
