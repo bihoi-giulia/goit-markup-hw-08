@@ -49,6 +49,7 @@
 
 .menu-container.is-open {
   transform: translateX(0);
+  visibility: visible;
 }
 
 .menu-container .menu-toggle {

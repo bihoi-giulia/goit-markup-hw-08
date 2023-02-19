@@ -25,15 +25,16 @@
   margin-bottom: 60px;
   margin-right: 38px;
 }
+
 @media (max-width: 480px) {
   .customers {
+    max-width: 480px;
+  }
+  .regular-costumers {
     max-width: 480px;
     column-count: 2;
     gap: 30px;
     flex-basis: 40%;
-  }
-  .regular-costumers {
-    width: 480px;
   }
   .subtitle {
     margin: auto;
