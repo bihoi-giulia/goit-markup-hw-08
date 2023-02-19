@@ -84,10 +84,11 @@
   .grid {
     max-width: 768px;
     display: flex;
-  }
-  &__container {
-    display: inline-block;
-    column-count: 2;
-    gap: 30px;
+
+    &__container {
+      display: inline-block;
+      column-count: 2;
+      gap: 30px;
+    }
   }
 }
