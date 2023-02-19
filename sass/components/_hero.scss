@@ -54,3 +54,10 @@
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .hero {
+    max-width: 768px;
+    background-image: url(../images/hero768W.png);
+    background-size: cover;
+  }
+}

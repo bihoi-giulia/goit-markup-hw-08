@@ -43,6 +43,7 @@
   transition: transform 250ms ease-in-out;
   justify-content: space-between;
   max-width: 480px;
+  display: none;
 }
 
 .menu-container.is-open {

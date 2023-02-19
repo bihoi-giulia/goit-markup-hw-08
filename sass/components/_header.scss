@@ -98,5 +98,19 @@
     }
   }
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .header {
+    max-width: 768px;
+    &__logo {
+      width: 132px;
+      padding: 17px;
+    }
+  }
+  .contact-menu {
+    display: block;
+    max-width: 768px;
+    &__item {
+      margin-bottom: 10px;
+    }
+  }
 }
