@@ -1,94 +1,142 @@
-.grid {
-  border-radius: 0px 0px 4px 4px;
-  background-color: var(--gray-bc);
-  box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 12%);
+@media screen and (min-width: 1200px) {
+  .grid {
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--gray-bc);
+    box-shadow: 0px 1px 3px 0px rgb(0 0 0 / 12%);
 
+    &__subtitle {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.16;
+      letter-spacing: 0.03em;
+      text-align: center;
+      margin-bottom: 50px;
+      padding-top: 94px;
+    }
+    &__container {
+      display: flex;
+      width: 1200px;
+      margin: 0 auto;
+      gap: 30px;
+      padding: 0;
+      justify-content: space-between;
+      text-align: center;
+    }
+    &__card {
+      background-color: var(--white-color);
+    }
+    &__title {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.18;
+      margin-top: 30px;
+      margin-bottom: 10px;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 1.18;
+      color: var(--description-color);
+      margin-top: 0;
+      margin-bottom: 16px;
+      color: rgba(117, 117, 117, 1);
+    }
+  }
+  .grid-social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px;
+    &__link {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      fill: var(--gray-color);
+      border-radius: 50%;
+    }
+    &__link:hover {
+      fill: white;
+      background: var(--highlight-color);
+    }
+    &__icon {
+      width: 20px;
+      height: 20px;
+      color: var(--highlight-color);
+    }
+  }
+}
+.team {
+  background-color: #f5f4fa;
+  max-width: 100%;
+  padding: 60px 15px;
+}
+.container-team {
+  max-width: 100%;
+}
+.grid {
   &__subtitle {
+    text-align: center;
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    letter-spacing: 0.03em;
-    text-align: center;
-    margin-bottom: 50px;
-    padding-top: 94px;
+    color: black;
   }
   &__container {
     display: flex;
-    width: 1200px;
-    margin: 0 auto;
+    flex-direction: column;
     gap: 30px;
-    padding: 0;
     justify-content: space-between;
-    text-align: center;
+    flex-wrap: wrap;
+    max-width: 100%;
   }
   &__card {
-    background-color: var(--white-color);
+    flex-wrap: wrap;
+    border-radius: 0px 0px 4px 4px;
+    background: var(--secondary-color);
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%);
+  }
+  &__img {
+    display: block;
+    margin: auto;
   }
   &__title {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 30px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.18;
-    margin-top: 30px;
-    margin-bottom: 10px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
   }
   &__text {
+    text-align: center;
     font-size: 16px;
-    line-height: 1.18;
-    color: var(--description-color);
-    margin-top: 0;
-    margin-bottom: 16px;
-    color: rgba(117, 117, 117, 1);
+    line-height: 1.17;
   }
 }
 .grid-social {
   display: flex;
   justify-content: center;
   gap: 10px;
-  padding: 0px;
+  padding-top: 28px;
+  padding-bottom: 30px;
+  flex-wrap: wrap;
   &__link {
+    background-color: #fff;
+    border-radius: 50%;
     width: 44px;
     height: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
-    fill: var(--gray-color);
-    border-radius: 50%;
-  }
-  &__link:hover {
-    fill: white;
-    background: var(--highlight-color);
+    color: #afb1b8;
   }
   &__icon {
     width: 20px;
     height: 20px;
-    color: var(--highlight-color);
-  }
-}
-@media (max-width: 480px) {
-  .grid {
-    max-width: 480px;
-    background-color: white;
-    margin-bottom: 30px;
-    &__container {
-      display: list-item;
-      flex-wrap: wrap;
-      max-width: 480px;
-    }
-    &__subtitle {
-      padding-top: 237px;
-    }
-  }
-}
-@media screen and (max-width: 768px) {
-  .grid {
-    max-width: 768px;
-    display: flex;
-
-    &__container {
-      display: inline-block;
-      column-count: 2;
-      gap: 30px;
-    }
+    fill: currentColor;
   }
 }
