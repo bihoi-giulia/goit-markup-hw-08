@@ -134,6 +134,10 @@
     align-items: center;
     color: #afb1b8;
   }
+  &__link:hover {
+    fill: white;
+    background: var(--highlight-color);
+  }
   &__icon {
     width: 20px;
     height: 20px;

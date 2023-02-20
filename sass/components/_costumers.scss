@@ -37,4 +37,29 @@
   gap: 30px;
   flex-wrap: wrap;
   max-width: 100%;
+  &__svg {
+    width: 170px;
+    height: 92px;
+    border: 1px solid var(--gray-color);
+    border-radius: 4px;
+    fill: var(--gray-color);
+  }
+  &__svg:hover {
+    cursor: pointer;
+    fill: var(--highlight-color);
+    border: 1px solid var(--highlight-color);
+    border-radius: 4px;
+  }
+}
+.regular-costumers {
+  column-count: 2;
+  margin-bottom: 60px;
+}
+.regular-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 100%;
 }

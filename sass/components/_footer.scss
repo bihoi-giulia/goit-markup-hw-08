@@ -232,6 +232,7 @@
     padding: 15px;
     outline: none;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
   &__btn {
     margin-top: 20px;
@@ -262,6 +263,14 @@
     right: 15.19%;
     bottom: 3.62%;
     top: 30%;
+  }
+  &__icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--white-color);
+  }
+  &__link:hover {
+    background: var(--highlight-color);
   }
 }
 .subscibe-label {

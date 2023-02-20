@@ -192,72 +192,192 @@
     opacity: 0;
   }
 }
+
 .modal {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--modal-bg-color);
   z-index: 99;
-
+  display: flex;
   justify-content: center;
   align-items: center;
-  transition: opacity 300ms linear, transform 250ms linear;
-  padding: 93px 15px;
+  transition: opacity 250ms linear, tansform 3000ms linear;
 
   &__inner {
-    width: 100%;
-    height: auto;
-    padding-bottom: 40px;
+    width: 528px;
+    height: 581px;
+    background-color: var(--white-color);
     position: relative;
-    background-color: white;
   }
   &__title {
-    font-family: "Roboto";
-    font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
-    text-align: center;
+    line-height: 1.16;
     letter-spacing: 0.03em;
-    margin-top: 40px;
+    text-align: center;
+    margin-top: 42px;
+    color: rgba(33, 33, 33, 1);
     margin-bottom: 12px;
-    padding-left: 40px;
-    padding-right: 40px;
   }
 }
-.request-form {
-  font-family: "Roboto";
-  font-style: normal;
-  font-size: 12px;
-  line-height: 14px;
-  text-align: left;
-  letter-spacing: 1%;
-  color: #757575;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding-left: 40px;
-  padding-right: 40px;
-}
 .input {
-  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+
+  &__label-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: rgba(117, 117, 117, 1);
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    position: relative;
+  }
+  &__field {
+    width: 448px;
+    height: 40px;
+    padding-left: 40px;
+    outline: none;
+    margin-top: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  &__field:focus-within {
+    border: 1px solid rgba(33, 150, 243, 1);
+  }
+  &__field:hover {
+    border: 1px solid rgba(33, 150, 243, 1);
+    cursor: pointer;
+    fill: var(--highlight-color);
+  }
+  &__field :focus-within &__label-text:focus-within {
+    outline: none;
+    border-color: var(--highlight-color);
+    fill: var(--highlight-color);
+  }
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    height: 15px;
+    width: 15px;
+  }
+  &__icon:hover {
+    fill: var(--highlight-color);
+    color: var(--highlight-color);
+    cursor: pointer;
+  }
+  &__icon:focus-within {
+    fill: var(--highlight-color);
+    color: var(--highlight-color);
+    cursor: pointer;
+  }
+  &__icon:focus-within {
+    fill: var(--highlight-color);
+  }
+  &__textarea {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    margin-top: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  &__textarea:focus {
+    border: 1px solid rgba(33, 150, 243, 1);
+  }
+  &__textarea:hover {
+    border: 1px solid rgba(33, 150, 243, 1);
+    cursor: pointer;
+  }
+  &__checkbox {
+    margin-top: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  &__checkbox-replace {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--checkbox-border-color);
+    border-radius: 2px;
+    transition: all 300ms linear;
+    cursor: pointer;
+  }
+  &__checkbox-replace svg {
+    width: 13px;
+    height: 10px;
+    opacity: 0;
+    transition: opacity 300ms linear;
+  }
+  &__btn {
+    background-color: var(--highlight-color);
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: var(--white-color);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    font-weight: 700;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+  }
+  &__btn:hover {
+    cursor: pointer;
+  }
 }
+.terms {
+  color: rgba(117, 117, 117, 1);
+  &__color {
+    color: var(--highlight-color);
+    text-decoration: underline;
+  }
+}
+
+input[type="checkbox"]:checked + .input__checkbox-replace svg {
+  opacity: 1;
+}
+input[type="checkbox"]:checked + .input__checkbox-replace {
+  border-color: var(--highlight-color);
+  background-color: var(--highlight-color);
+}
+input[type="checkbox"] {
+  display: none;
+}
+
 .close-modal {
+  border: 1px solid var(--close-modal-color);
   border-radius: 50%;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   width: 30px;
   height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 500;
   cursor: pointer;
   position: absolute;
   top: 8px;
   right: 8px;
+  background-color: var(--white-color);
+  align-items: center;
+  display: flex;
+  margin: auto;
+  margin-right: 8px;
+  justify-content: center;
+}
+.close-modal:hover {
+  color: var(--highlight-color);
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.1);
 }
 .is-hidden {
   visibility: hidden;
