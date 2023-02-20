@@ -144,3 +144,24 @@
   padding-left: 24px;
   padding-right: 24px;
 }
+@media screen and (min-width: 768px) {
+  .portfolio-grid {
+    &__container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding-top: 30px;
+    }
+  }
+  .portfolio-item {
+    background-color: #fff;
+    width: 100%;
+    padding: 60px 15px;
+  }
+  .div-portofolio {
+    background-color: #fff;
+    width: 100%;
+  }
+}

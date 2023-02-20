@@ -63,3 +63,11 @@
   flex-wrap: wrap;
   max-width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .regular-costumers {
+    column-count: 3;
+  }
+  .regular-div {
+    margin-bottom: 30px;
+  }
+}
