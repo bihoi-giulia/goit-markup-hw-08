@@ -18,16 +18,13 @@
       padding-top: 94px;
     }
     &__container {
-      display: flex;
-      min-width: 1200px;
-      margin: 0 auto;
-      gap: 30px;
-      padding: 0;
-      justify-content: space-between;
-      text-align: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 93px 225px;
     }
     &__card {
       background-color: var(--white-color);
+      flex-basis: calc((100% - 90px) / 4);
     }
     &__title {
       font-weight: 500;
